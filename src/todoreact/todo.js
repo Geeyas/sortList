@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 //getting data from local storage
 
@@ -94,7 +95,7 @@ const Todo = () => {
 
                         {/* basically it says if the toggle button is true then the first button will be executed else second one will */}
                         {toggleButton ?
-                            (<i className="far fa-edit add-btn" onClick={addItems}></i>) :
+                            (<i className="bi bi-pencil-square add-btn" onClick={addItems}></i>) :
                             (<i className="fa fa-plus add-btn" onClick={addItems}></i>)
                         }
                     </div>
@@ -105,8 +106,8 @@ const Todo = () => {
                                 <div className="eachItem" key={curElem.id}>
                                     <h3>{curElem.name}</h3>
                                     <div className="todo-btn">
-                                        <i className="far fa-edit add-btn" onClick={() => editItem(curElem.id)}></i>
-                                        <i className="far fa-trash-alt add-btn" onClick={() => deleteItem(curElem.id)}></i>
+                                        <i className="bi bi-pencil-square add-btn" onClick={() => editItem(curElem.id)}></i>
+                                        <i className="bi bi-trash3 add-btn" onClick={() => deleteItem(curElem.id)}></i>
                                     </div>
                                 </div>
                             )

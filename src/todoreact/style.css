@@ -13,7 +13,7 @@ html {
 
 .main-div {
   min-height: 100vh;
-  background-image: linear-gradient(#adc3ff,#c4d3ff,#e2eaff,#fbfdff);
+  background-image: linear-gradient(#adc3ff, #c4d3ff, #e2eaff, #fbfdff);
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -62,12 +62,14 @@ input:active:focus {
   padding: 2.3rem 1.5rem;
   outline: none;
 }
+
 input {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 input:focus {
   -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
@@ -91,6 +93,7 @@ input:focus {
   transition: color 0.15s linear;
   font-size: 2rem;
 }
+
 .fa:hover {
   color: rgb(47, 214, 122);
 }
@@ -130,8 +133,8 @@ input:focus {
   color: #fff;
 }
 
-.fa-trash-alt,
-.fa-edit {
+.bi-trash3,
+.bi-pencil-square {
   /* margin-left: -2.5rem; */
   cursor: pointer;
   pointer-events: auto;
@@ -142,19 +145,19 @@ input:focus {
   font-size: 2rem;
 }
 
-.addItems .fa-edit {
+.addItems .bi-pencil-square {
   color: rgb(47, 214, 122);
 }
 
-.fa-edit {
+.bi-pencil-square {
   margin-left: -3.5rem;
 }
 
-.eachItem:hover .fa-trash-alt {
+.eachItem:hover .bi-trash3 {
   color: rgb(214, 47, 61);
 }
 
-.eachItem:hover .fa-edit {
+.eachItem:hover .bi-pencil-square {
   color: rgb(100, 214, 47);
 }
 
@@ -174,6 +177,7 @@ input:focus {
   text-transform: uppercase;
   width: 100%;
 }
+
 .btn:hover {
   text-decoration: none;
 }
@@ -220,3 +224,17 @@ input:focus {
   -webkit-transform: translateY(0) scale(1, 1);
   transform: translateY(0) scale(1, 1);
 }
+
+/* .bootsize {
+  font-size: 25px;
+  padding-right: 10px;
+  color: blueviolet;
+}
+
+.bootsize .edit:hover {
+  color: green;
+}
+
+.bootsize .trash:hover {
+  color: red;
+} */
