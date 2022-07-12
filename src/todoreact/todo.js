@@ -88,7 +88,7 @@ const Todo = () => {
                 <div className="child-div">
                     <figure>
                         <img src="./images/todoo.webp" alt="Todo Logo" />
-                        <figcaption>Add Your List 📝</figcaption>
+                        <figcaption>Add Your To-Do List 📝</figcaption>
                     </figure>
                     <div className="addItems">
                         <input placeholder="✍️ Add items...." className="form-control" value={inputData} onChange={(e) => setInputData(e.target.value)} />
